@@ -1,0 +1,345 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    background-color: #f8f8f8;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: #f8f8f8; 
+    position: relative;
+    padding-top: 0.1px;
+}
+#nav{
+    height: 12vh;
+    width: 100%;
+    margin-top: 25px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#nav h1{
+    height: 100%;
+    width: 18%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: monument;
+    font-size: 32px;
+    letter-spacing: -1px;
+    position: relative;
+}
+#nav h1::after{
+    content: "©️";
+    font-weight: 300;
+    font-size: 15px;
+    position: absolute;
+    top: 24%;
+    right: 13%;
+}
+#nav h1::before{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    content: "Mordern Management";
+    font-weight: 300;
+    font-size: 13px;
+    position: absolute;
+    top: 60%;
+    letter-spacing: 1;
+    right: 20%;
+}
+#nav h2{
+    height: 100%;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 2px solid  black;
+    font-size: 22px;
+    font-weight: 600;
+}
+#nav h2:nth-last-child(1){
+    width: 10%;
+}
+#nav h2:nth-last-child(2){
+    width: 24%;
+}
+#center{
+    height: 80%;
+    width: 100%;
+    padding: 2vw;
+    position: relative;
+}
+#content{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+#content video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+#overlay{
+    width: 100%;
+    height: 52%;
+    position: absolute;
+    bottom: 0;
+    padding: 4vw;
+    color: whitesmoke;
+}
+#over1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.5vw;
+}
+#over1 h1{
+    font-family: monument;
+    font-size: 3vw;
+}
+#over1 h2{
+    font-size: 2vw;
+    padding: 1.5vw 2vw;
+    border-radius: 50%;
+    border: 2px solid white;
+    border-bottom: 3px solid #ffff;
+}
+#over2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 2px solid white;
+    padding-top: 1vw;
+}
+#over2{
+    font-weight: 400;
+    font-size: 1.5vw;
+}
+#scroll{
+    white-space: nowrap;
+    height: 40vh;
+    padding: 1vw;
+    width: 100%;
+    background-color: #f8f8f8 ; 
+    overflow-x: hidden;
+   
+    overflow-y: hidden;
+}
+.container{
+    width: 100%;
+   height: 100%;
+    display: inline-block;
+    padding: 2vw;
+    animation-name: anime;
+    animation-duration: 10s;
+    animation-timing-function:linear ;
+    animation-iteration-count: infinite;
+}
+#scroll img{
+    width: 12vw;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    margin:1vw  2vw;
+    object-position: top;
+}
+@keyframes anime {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+#alphabet{
+    width: 100%;
+    height: 11vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+    padding: 1vw;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+}
+#alphabet>h5{
+    height: 4vh;
+    font-size: 1.5vw;
+    font-style:italic;
+    font-weight: 600;
+    margin-right: 2vw;
+    border-bottom: 2px solid black;
+}
+#alphabet>h6{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 4vh;
+    width: 2vw;
+    padding: 1vw;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all ease 0.2s;
+    font-size: 1.5vw;
+    font-style:italic;
+    font-weight: 400;
+}
+#alphabet>h6:hover{
+    border: 1px solid black;
+}
+
+#page2{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2vw 5vw ;
+}
+#page2-1{
+    width: 50%;
+    height: 100%;
+    background:url(pic1.png);
+    background-size: cover;
+}
+#page2-2{
+    width: 40%;
+    height: 100%;
+    display: flex;
+     flex-direction: column;
+     position: relative;
+}
+#page2-2 img{
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+}
+#page2-2-2 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#page2-2-2 h1{
+    font-weight: 600;
+    font-size: 22px;
+    padding-right: 2vw;
+    width: 70%;
+}
+#page2-2-2 h2{
+    font-weight: 600;
+    font-size: 15px;
+    width: 30%;
+}
+#page3{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    padding: 5vw 4vw;
+}
+#page3>h1{
+    font-family: monument;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2.5vw;
+    margin-bottom: 5vh;
+}
+.elem{
+    height: 15vh;
+    width: 100%;
+    border-top: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0vw 2vw;
+    position: relative;
+    cursor: pointer;  
+}
+.elem>img{
+    position: absolute;
+    height: 90%;
+    width: 8%;
+    border-radius: 50%;
+    left: 15%;
+    object-fit: cover;
+    opacity: 0;
+    transition: all ease 0.7s;  
+}
+
+.elem:nth-last-child(1) img{
+    left: 40%;
+}
+.elem:nth-last-child(3) img{
+    left: 40%;
+}
+.elem:hover img{
+    opacity: 1;
+    left: 20%;
+}
+.elem h4{
+    font-size: 1.2vw;
+    width: 6%;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.elem .elem-part2{
+    width: 50%;
+}
+.elem-part2 h1{
+    font-size: 2.5vw;
+}
+.elem-part2 h5{
+    font-size: 1vw;
+    text-transform: uppercase;
+}
+
+.elem:nth-last-child(1){
+    border-bottom:2px solid black;
+}
+#marque{
+    border-top: 2px solid black;
+    border-bottom: 2px solid black ;
+    width: 100%;
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding: 0.5vw;
+}
+#marque>h1{
+    display: inline-block;
+    font-size: 3vw;
+    -webkit-text-stroke: 2px  black;
+    color: transparent;
+    font-family: monument;
+    letter-spacing: 2px;
+    margin-right: 16px;
+    animation-name: move;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes move {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(calc(-100% - 20px)); 
+    }
+}
+
+
+ 
+
